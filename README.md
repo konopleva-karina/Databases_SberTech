@@ -32,7 +32,7 @@
 Посмотрим на статьи авторов Christian Stahn и Dohoon Choi:
 ![Screenshot from 2022-03-08 16-40-05](https://user-images.githubusercontent.com/60742399/157254803-a0187ee9-eaec-4189-b2d8-79d80ebccacb.png)
 
-Производительность запроса без индексов: 
+Производительность запроса по выводу всех статей одного из авторов без индексов: 
 
 ![Screenshot from 2022-03-08 16-46-20](https://user-images.githubusercontent.com/60742399/157257661-a9021658-0798-4b60-a020-d0b61adef659.png)
 
