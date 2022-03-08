@@ -23,7 +23,8 @@
 3. Посмотрим на книги из категории "math.NT": 
 
 ![Screenshot from 2022-03-08 16-38-26](https://user-images.githubusercontent.com/60742399/157254646-09aa5dcb-1e08-4842-9756-f74f759319b6.png)
-Посмотрим на производительность этого запроса: 
+
+Посмотрим на производительность этого запроса (без limit'a): 
 
 ![Screenshot from 2022-03-08 16-39-09](https://user-images.githubusercontent.com/60742399/157254767-2913166a-ba03-4b5e-9f3e-6386ac954bdb.png)
 ![Screenshot from 2022-03-08 16-45-34](https://user-images.githubusercontent.com/60742399/157256167-979eb8cf-56d1-4a5d-a40e-18896cba54ab.png)
