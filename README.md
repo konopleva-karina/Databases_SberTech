@@ -1,6 +1,6 @@
 # Домашняя работа №2. CouchDB + PouchDB
 
-1. Для моей версии Ubuntu нет установовчных Apache CouchDB пакетов, поэтому установим CouchDB с помощью Docker Compose по [гайду](https://medevel.com/tutorial-install-couchdb-with-docker/).
+1. Для моей версии Ubuntu нет установочных Apache CouchDB пакетов, поэтому установим CouchDB с помощью Docker Compose по [гайду](https://medevel.com/tutorial-install-couchdb-with-docker/).
 2. Скачаем файл ДЗ_2.html.
 3. Зайдем на `localhost:5984/_utils/#` и создадим БД с названием new-db через веб-интерфейс
 
