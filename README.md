@@ -12,6 +12,7 @@
 5. Пропишем в ДЗ_2.html путь к БД 
 
 ![Screenshot from 2022-03-30 00-40-08](https://user-images.githubusercontent.com/60742399/160712011-eb2cb88c-c3b5-4710-82ef-99781950460d.png)
+
 6. У меня была проблема с CORS, поэтому нужно поменять настройки 
 
 ![Screenshot from 2022-03-30 00-46-16](https://user-images.githubusercontent.com/60742399/160712684-085bc9b7-18f1-4006-b149-cf873ec59f0f.png)
