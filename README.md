@@ -2,7 +2,7 @@
 
 1. Для моей версии Ubuntu нет установочных Apache CouchDB пакетов, поэтому установим CouchDB с помощью Docker Compose по [гайду](https://medevel.com/tutorial-install-couchdb-with-docker/).
 2. Скачаем файл ДЗ_2.html.
-3. Зайдем на `localhost:5984/_utils/#` и создадим БД с названием new-db через веб-интерфейс
+3. Зайдем на `http://localhost:5984/_utils/#` и создадим БД с названием new-db через веб-интерфейс
 
 ![Screenshot from 2022-03-30 00-36-51](https://user-images.githubusercontent.com/60742399/160711538-4003704f-366b-4315-b25c-aacde788ec01.png)
 4. Добавим в БД документ с полем «name», в которое запишем "Konopleva"
