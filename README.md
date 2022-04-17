@@ -1,6 +1,6 @@
 # Домашняя работа №3. Redis
 
-1. Установим и запустим Redis-server. Для этого выполним
+0. Установим и запустим Redis-server. Для этого выполним
 ```shell
 docker pull redis
 docker run --name redis-server -d redis
@@ -21,6 +21,8 @@ chmod a+x RedisInsight-v2-linux-x86_64.AppImage
 
 ![Screenshot from 2022-04-17 14-54-02](https://user-images.githubusercontent.com/60742399/163713263-c6b62ec6-cc64-48f2-8cae-b911e1a15f85.png)
 
-Set/get работают
+Команды set/get работают
 
 ![Screenshot from 2022-04-17 14-56-00](https://user-images.githubusercontent.com/60742399/163713311-6aa8f18c-691f-41b4-9ea3-5847e908fa2e.png)
+
+1. 
