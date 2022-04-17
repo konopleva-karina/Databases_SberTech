@@ -12,7 +12,7 @@ docker exec -it redis-server redis-cli
 
 Установим и запустим десктопный менеджер Redisinsight. Для этого выполним
 ```shell
-https://download.redisinsight.redis.com/latest/RedisInsight-v2-linux-x86_64.AppImage
+wget https://download.redisinsight.redis.com/latest/RedisInsight-v2-linux-x86_64.AppImage
 chmod a+x RedisInsight-v2-linux-x86_64.AppImage
 ./RedisInsight-v2-linux-x86_64.AppImage
 ```
