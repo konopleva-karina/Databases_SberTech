@@ -1,4 +1,8 @@
 # Домашняя работа №3. Redis
+
+
+### Установка
+
 Установим и запустим Redis-server. Для этого выполним
 ```shell
 docker pull redis
@@ -23,6 +27,8 @@ chmod a+x RedisInsight-v2-linux-x86_64.AppImage
 Команды set/get работают
 
 ![Screenshot from 2022-04-17 14-56-00](https://user-images.githubusercontent.com/60742399/163713311-6aa8f18c-691f-41b4-9ea3-5847e908fa2e.png)
+
+### Генерируем данные
 
 Для генерации большого JSON'а мы сгенерируем большие строки (~100000 байт) и будем вставлять их большое число раз.Вначале напишем небольшой код на Python.
 
