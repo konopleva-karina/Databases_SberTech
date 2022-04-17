@@ -225,7 +225,7 @@ _Full output_ [lrange_results.txt](https://github.com/konopleva-karina/Databases
 
 ### Redis Cluster
 
-Не буду изобретать что-то новое. Готовое решение есть [здесь](https://github.com/vishnudxb/docker-redis-cluster). Таймауты можно просто поменять, зайдя в конфиг нужной ноды и выставив новый cluster-node-timeout.
+Не буду изобретать что-то новое. Готовое решение на 3 мастера и 3 слэйва есть [здесь](https://github.com/vishnudxb/docker-redis-cluster). Таймауты можно просто поменять, зайдя в конфиг нужной ноды и выставив новый cluster-node-timeout.
 
 ![Screenshot from 2022-04-18 01-31-29](https://user-images.githubusercontent.com/60742399/163734654-630e459b-6fa5-46e4-a8de-eb73aaf926db.png)
 
