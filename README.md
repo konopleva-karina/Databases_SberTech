@@ -222,3 +222,11 @@ _Full output_ [lrange_results.txt](https://github.com/konopleva-karina/Databases
 Хуже всего при большом json'е показал себя `LPUSH`(avg 1378 ops/sec), `RPUSH` (avg 1567 ops/sec) немного производительнее `LPUSH'а`, но его тоже лучше не использовать в нашем случае. Самой быстрой оказалась работа со строками (для `SET` 11158 ops/sec avg). HSET (avg 2453 ops/sec) отработал несильно, но быстрее, чем ZADD (avg 2204 ops/sec).
 
 Про чтение. Не будем учитывать `LRANGE`, потому что он читал очень мало данных. С учетом этого `GET` отработал быстрее всех. Чтение происходит быстрее, чем запись.
+
+### Redis Cluster
+
+Не буду изобретать что-то новое. Готовое решение есть [здесь](https://github.com/vishnudxb/docker-redis-cluster). Таймауты можно просто поменять, зайдя в конфиг нужной ноды и выставив новый cluster-node-timeout.
+
+![Screenshot from 2022-04-18 01-31-29](https://user-images.githubusercontent.com/60742399/163734654-630e459b-6fa5-46e4-a8de-eb73aaf926db.png)
+
+![Screenshot from 2022-04-18 01-31-53](https://user-images.githubusercontent.com/60742399/163734665-c092697f-7136-473d-acc5-dc4b68276d3b.png)
