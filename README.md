@@ -24,7 +24,7 @@ chmod a+x RedisInsight-v2-linux-x86_64.AppImage
 
 ![Screenshot from 2022-04-17 14-56-00](https://user-images.githubusercontent.com/60742399/163713311-6aa8f18c-691f-41b4-9ea3-5847e908fa2e.png)
 
-Для первого пункта напишем небольшой код на Python
+Для генерации большого JSON'а мы сгенерируем большие строки (~100000 байт) и будем вставлять их большое число раз.Вначале напишем небольшой код на Python.
 
 ```python
 import random
@@ -63,6 +63,15 @@ if __name__ == '__main__':
     generate_long_hset_data()
     generate_long_list_data()
 ```
+
+В итоге получим три файла
+* [text.txt](https://github.com/konopleva-karina/Databases_SberTech/files/8502459/text.txt)
+* [hset_data.txt](https://github.com/konopleva-karina/Databases_SberTech/files/8502460/hset_data.txt)
+* [list_data.txt](https://github.com/konopleva-karina/Databases_SberTech/files/8502461/list_data.txt)
+
+Они нужного нам размера
+
+![Screenshot from 2022-04-18 00-15-49](https://user-images.githubusercontent.com/60742399/163732283-a505d8b3-7655-4a35-80eb-032cbb5742dd.png)
 
 Тестировать скорость записи и чтения будем при помощи [memtier_benchmark](https://github.com/RedisLabs/memtier_benchmark). Устанавливаем его [по гайду](https://www.digitalocean.com/community/tutorials/how-to-perform-redis-benchmark-tests). Переносим в папку сгенерированные нами файлы со строками. Далее будем запускать memtier_benchmark c параметрами
 
