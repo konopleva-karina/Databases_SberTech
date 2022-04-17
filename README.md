@@ -61,7 +61,7 @@ def generate_long_hset_data():
 
 # Строка для одной операции LPUSH/RPUSH __key__ <data>
 def generate_long_list_data():
-    generate_data('list_data.txt', 100)
+    generate_data('list_data.txt', 500)
 
 
 if __name__ == '__main__':
