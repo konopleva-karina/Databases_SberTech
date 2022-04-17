@@ -8,7 +8,7 @@ docker exec -it redis-server redis-cli
 ```
 Мы увидим CLI
 
-![Screenshot from 2022-04-16 20-04-49](https://user-images.githubusercontent.com/60742399/163712957-38845f1d-5288-471b-be95-b0e7dab731a2.png)
+![Screenshot from 2022-04-17 14-43-58](https://user-images.githubusercontent.com/60742399/163713339-92ba785f-38c1-4495-b171-d68304cb0031.png)
 
 Установим и запустим десктопный менеджер Redisinsight. Для этого выполним
 ```shell
