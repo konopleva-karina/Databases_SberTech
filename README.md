@@ -131,7 +131,7 @@ _Benchmark_
 
 _Full output_ [zadd_results.txt](https://github.com/konopleva-karina/Databases_SberTech/files/8502411/zadd_results.txt)
 
-_Замечание_ Мне не хватило оперативки, чтобы вставить с помощью `LPUSH` и `RPUSH` столько же пар ключ-значение, что и в `ZADD` и `HSET`, и сервер переставал отвечать. Поэтому операии `LPUSH`, `RPUSH`, `LRANGE` будут всего по 100 ключам.
+_Замечание_ Мне не хватило оперативки, чтобы вставить с помощью `LPUSH` и `RPUSH` столько же пар ключ-значение, что и в `ZADD` и `HSET`, и сервер переставал отвечать. Поэтому операции `LPUSH`, `RPUSH`, `LRANGE` будут всего по 100 ключам.
 
 * __LPUSH__
 
@@ -209,7 +209,7 @@ _Full output_ [zrangbyscore_results.txt](https://github.com/konopleva-karina/Dat
 _Command_ 
 
 ```bash
-./memtier_benchmark -s 172.17.0.2 --key-minimum=1 --key-maximum=1000  --requests=allkeys --command='lrange __key__ 1 499'
+./memtier_benchmark -s 172.17.0.2 --key-minimum=1 --key-maximum=100  --requests=allkeys --command='lrange __key__ 1 499'
 ```
 
 _Benchmark_ 
@@ -218,3 +218,5 @@ _Benchmark_
 
 _Full output_ [lrange_results.txt](https://github.com/konopleva-karina/Databases_SberTech/files/8502380/lrange_results.txt)
 
+### Выводы
+Хуже всего при большом json'е показал себя `LPUSH`(avg 1378 ops/sec), `RPUSH` (avg 1567 ops/sec) немного производительнее `RPUSH`, но его тоже лучше не использовать в нашем случае. Самой быстрой оказалась работа со строками (для `SET` 11158 ops/sec avg). HSET (avg 2453 ops/sec) отработал несильно, но быстрее, чем ZADD (avg 2204 ops/sec).
