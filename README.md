@@ -219,4 +219,4 @@ _Benchmark_
 _Full output_ [lrange_results.txt](https://github.com/konopleva-karina/Databases_SberTech/files/8502380/lrange_results.txt)
 
 ### Выводы
-Хуже всего при большом json'е показал себя `LPUSH`(avg 1378 ops/sec), `RPUSH` (avg 1567 ops/sec) немного производительнее `RPUSH`, но его тоже лучше не использовать в нашем случае. Самой быстрой оказалась работа со строками (для `SET` 11158 ops/sec avg). HSET (avg 2453 ops/sec) отработал несильно, но быстрее, чем ZADD (avg 2204 ops/sec).
+Хуже всего при большом json'е показал себя `LPUSH`(avg 1378 ops/sec), `RPUSH` (avg 1567 ops/sec) немного производительнее `LPUSH'а`, но его тоже лучше не использовать в нашем случае. Самой быстрой оказалась работа со строками (для `SET` 11158 ops/sec avg). HSET (avg 2453 ops/sec) отработал несильно, но быстрее, чем ZADD (avg 2204 ops/sec).
