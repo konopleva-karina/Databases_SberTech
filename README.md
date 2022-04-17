@@ -114,12 +114,14 @@ _Benchmark_
 
 _Full output_ [zadd_results.txt](https://github.com/konopleva-karina/Databases_SberTech/files/8502411/zadd_results.txt)
 
+Мне не хватило оперативки, чтобы вставить с помощью `LPUSH` и `RPUSH` те же данные, что и в `ZADD` и `HSET`
+
 * __LPUSH__
 
 _Command_ 
 
 ```bash
-./memtier_benchmark -s 172.17.0.2 --key-minimum=1 --key-maximum=10000  --requests=allkeys --command='hset __key__ <содержимое hset_data.txt>'
+./memtier_benchmark -s 172.17.0.2 --key-minimum=1 --key-maximum=100  --requests=allkeys --command='lpush __key__ <содержимое list_data.txt>'
 ```
 
 _Benchmark_ 
@@ -133,7 +135,7 @@ _Full output_ [lpush_results.txt](https://github.com/konopleva-karina/Databases_
 _Command_ 
 
 ```bash
-./memtier_benchmark -s 172.17.0.2 --key-minimum=1 --key-maximum=10000  --requests=allkeys --command='hset __key__ <содержимое hset_data.txt>'
+./memtier_benchmark -s 172.17.0.2 --key-minimum=1 --key-maximum=100  --requests=allkeys --command='rpush __key__ <содержимое list_data.txt>'
 ```
 
 _Benchmark_ 
