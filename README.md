@@ -39,7 +39,7 @@ def generate_long_string(length=100000):
         f.write(rand_string)
 
 
-# Генерирует строку '1 "1" 2 "2" 3 "3"...' длины length и записывает её в filename
+# Генерирует строку '1 <слово длины 1> 2 <слово длины 2> 3 <слово длины 3> ...' и записывает её в filename, length - максимальная длина слова
 def generate_data(filename, length):
     with open(filename, 'w') as f:
         letters = string.ascii_lowercase
@@ -59,6 +59,8 @@ def generate_long_list_data():
 
 
 if __name__ == '__main__':
+    generate_long_string()
+    generate_long_hset_data()
     generate_long_list_data()
 ```
 
